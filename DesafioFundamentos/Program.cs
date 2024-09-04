@@ -23,11 +23,12 @@ bool exibirMenu = true;
 while (exibirMenu)
 {
     Console.Clear();
+    es.ListarVeiculos();
+    Console.WriteLine("------------------------");
     Console.WriteLine("Digite a sua opção:");
     Console.WriteLine("1 - Cadastrar veículo");
     Console.WriteLine("2 - Remover veículo");
-    Console.WriteLine("3 - Listar veículos");
-    Console.WriteLine("4 - Encerrar");
+    Console.WriteLine("3 - Encerrar");
 
     switch (Console.ReadLine())
     {
@@ -40,10 +41,6 @@ while (exibirMenu)
             break;
 
         case "3":
-            es.ListarVeiculos();
-            break;
-
-        case "4":
             exibirMenu = false;
             break;
 
